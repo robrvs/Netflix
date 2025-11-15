@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mete Netflix</title>
+    <link rel="stylesheet" href="css/catalogo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MeteFLIX</div>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Séries</a>
+            <a href="#">Filmes</a>
+            <a href="#">Bombando</a>
+            <a href="#">Minha Lista</a>
+        </nav>
+    </header>    
+    <section class="featured">
+        <div class="featured-content">
+            <h1 class="featured-title">TSI: Uma Aventura Épica</h1>
+            <p class="featured-description">
+                Uma jornada emocionante através do mundo acadêmico. 
+                Prepare-se para uma experiência de aprendizado que vai deixar você sem fôlego.
+            </p>
+            <div class="featured-buttons">
+                <button class="btn btn-play">▶ Assistir</button>
+                <button class="btn btn-info">Mais Informações</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="carousel-container">
+        <h2 class="carousel-title">Populares na Netflix</h2>
+        <div class="carousel-wrapper">
+            <button class="nav-btn prev" onclick="scroll(-300)">‹</button>
+            <div class="carousel" id="carousel1">
+                <div class="movie-card">
+                    <div class="movie-info">
+                        <h3>Filme 1</h3>
+                        <p>Ação • 2024</p>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-info">
+                        <h3>Filme 2</h3>
+                        <p>Drama • 2024</p>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-info">
+                        <h3>Filme 3</h3>
+                        <p>Comédia • 2024</p>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-info">
+                        <h3>Filme 4</h3>
+                        <p>Suspense • 2024</p>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-info">
+                        <h3>Filme 5</h3>
+                        <p>Romance • 2024</p>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-info">
+                        <h3>Filme 6</h3>
+                        <p>Ficção • 2024</p>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-info">
+                        <h3>Filme 7</h3>
+                        <p>Terror • 2024</p>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-info">
+                        <h3>Filme 8</h3>
+                        <p>Aventura • 2024</p>
+                    </div>
+                </div>
+            </div>
+            <button class="nav-btn next" onclick="scroll(300)">›</button>
+        </div>
+    </div>
+
+    <div class="carousel-container">
+        <h2 class="carousel-title">Minha Lista</h2>
+        <div class="carousel-wrapper">
+            <button class="nav-btn prev" onclick="scrollCarousel('carousel2', -300)">‹</button>
+            <div class="carousel" id="carousel2">
+                <div class="movie-card">
+                    <div class="movie-info">
+                        <h3>Série 1</h3>
+                        <p>Drama • 2024</p>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-info">
+                        <h3>Série 2</h3>
+                        <p>Comédia • 2024</p>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-info">
+                        <h3>Série 3</h3>
+                        <p>Ação • 2024</p>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-info">
+                        <h3>Série 4</h3>
+                        <p>Suspense • 2024</p>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-info">
+                        <h3>Série 5</h3>
+                        <p>Terror • 2024</p>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-info">
+                        <h3>Série 6</h3>
+                        <p>Ficção • 2024</p>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-info">
+                        <h3>Série 7</h3>
+                        <p>Romance • 2024</p>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-info">
+                        <h3>Série 8</h3>
+                        <p>Aventura • 2024</p>
+                    </div>
+                </div>
+            </div>
+            <button class="nav-btn next" onclick="scrollCarousel('carousel2', 300)">›</button>
+        </div>
+    </div> 
+   <script>
+        function scroll(amount) {
+            document.getElementById('carousel1').scrollBy({
+                left: amount,
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollCarousel(id, amount) {
+            document.getElementById(id).scrollBy({
+                left: amount,
+                behavior: 'smooth'
+            });
+        }
+    </script>    
+</body>
+</html>
