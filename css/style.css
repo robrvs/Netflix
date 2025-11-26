@@ -187,16 +187,3 @@
             font-size: 14px;
             font-weight: bold;
         }
-            function scroll(amount) {
-            document.getElementById('carousel1').scrollBy({
-                left: amount,
-                behavior: 'smooth'
-            });
-        }
-
-        function scrollCarousel(id, amount) {
-            document.getElementById(id).scrollBy({
-                left: amount,
-                behavior: 'smooth'
-            });
-        }
