@@ -52,8 +52,8 @@
         }
         /*Estilização dos botões(Assistir/Mais Informações) da imagem principal, que ocupa grande parte do topo da página.*/
         .featured-buttons {
-            display: flex;
-            gap: 15px;
+            display: flex; /*Definimos que os elementos internos podem mudar de posição.*/
+            gap: 15px; /*Alinhamento vertical no centro.*/
         }
 
         .btn {
@@ -73,7 +73,7 @@
             background: #fff;
             color: #000;
         }
-
+        /*Estilização dos botões para mudar a cor do botão quando o mouse passar por cima deles.*/
         .btn-play:hover {
             background: rgba(255,255,255,0.75);
         }
@@ -211,7 +211,7 @@
             right: 0;
         }
 
-        /* Imagens placeholder com gradientes */
+        /* Espaço reservado para as imagens com cores gradientes */
         .movie-card:nth-child(1) { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
         .movie-card:nth-child(2) { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
         .movie-card:nth-child(3) { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
