@@ -5,9 +5,9 @@
         }
 
         body {
-            background: #141414;
-            font-family: 'Arial', sans-serif;
-            color: #fff;
+            background: #141414; /*Estilização da cor do fundo na cor preta.*/
+            font-family: 'Arial', sans-serif; /*Estilização das possíveis fontes para o navegador interpretar.*/
+            color: #fff; 
             padding: 4px;
         }
         /*Estilização da barra de navegação superior, incluindo o logotipo e links.*/
