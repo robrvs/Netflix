@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="css/catalogo.css">
 </head>
 <body>
-    <header>
-        <div class="logo">NetFLIX</div>
+    <header class="logo-header">
+        <div class="logo">
+            <!-- Imagem ou ícone da logo da Netflix -->
+            <a href="#">
+                <img src="img/logo.jpg" alt="Logo Netflix">
+            </a>            
+        </div>
         <nav>
             <a href="#">Início</a>
             <a href="#">Séries</a>
@@ -34,12 +39,12 @@
     <div class="carousel-container">
         <h2 class="carousel-title">Populares na Netflix</h2>
         <div class="carousel-wrapper">
-            <button class="nav-btn prev" onclick="scroll(-300)">‹</button>
+            <button class="nav-btn prev" onclick="scrollCarousel('carousel1', -300)">‹</button>            
             <div class="carousel" id="carousel1">
                 <div class="movie-card">
                  <img src="img/img1.jpg" alt="Carrossel HTML CSS Imagem 1">
                     <div class="movie-info">
-                        <h3>Filme 1</h3>
+                        <h3>    Filme 1</h3>
                         <p>Ação • 2024</p>
                     </div>
                 </div>
@@ -85,15 +90,16 @@
                         <p>Terror • 2024</p>
                     </div>
                 </div>
-                <!-- <div class="movie-card">
+                <div class="movie-card">
                  <img src="img/img8.jpg" alt="Carrossel HTML CSS Imagem 8">                                                   
                     <div class="movie-info">
                         <h3>Filme 8</h3>
                         <p>Aventura • 2024</p>
-                    </div> -->
+                    </div> 
                 </div>
             </div>
-            <button class="nav-btn next" onclick="scroll(300)">›</button>
+            <!-- <button class="nav-btn next" onclick="scroll(300)">›</button> -->
+            <button class="nav-btn next" onclick="scrollCarousel('carousel1', 300)">›</button>            
         </div>
     </div>
 

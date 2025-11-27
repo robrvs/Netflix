@@ -26,7 +26,7 @@
             position: relative;   
             height: 80vh;
             background: linear-gradient(to bottom, transparent 0%, #141414 100%),
-                        url('https://newsrondonia.com.br/wp-content/uploads/2024/08/a-259.jpg') center/cover;
+                        url("../img/IFRO-Back-Red.jpg") center/cover;
             display: flex;
             align-items: flex-end;
             padding: 0 50px 100px;
@@ -147,7 +147,7 @@
         .movie-info {
             position: absolute;
             bottom: 0;
-            left: 0;
+            left: 0; 
             right: 0;
             background: linear-gradient(transparent, rgba(0,0,0,0.9));
             padding: 30px 10px 10px;
@@ -176,7 +176,7 @@
             color: #fff;
             text-decoration: none;
             font-size: 14px;
-            transition: color 0.3s;
+            transition: color 0.3s;         
         }
                 nav a:hover {
             color: #b3b3b3;
@@ -217,3 +217,16 @@
         .movie-card:nth-child(6) { background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); }
         .movie-card:nth-child(7) { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
         .movie-card:nth-child(8) { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); }
+
+.logo-header {
+    display: flex; /* Usa flexbox para alinhar itens */
+    justify-content: space-between; /* Espaça a logo e o menu */
+    align-items: center; /* Alinha verticalmente ao centro */
+    background-color: #000; /* Fundo preto */
+    padding: 10px 20px; /* Espaçamento interno */
+    color: #fff; /* Cor do texto */
+}
+
+.logo img {
+    height: 40px; /* Ajuste a altura conforme necessário */
+}
