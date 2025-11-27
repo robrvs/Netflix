@@ -32,11 +32,11 @@
         </div>
     </section>
 
-    <div class="carousel-container">
-        <h2 class="carousel-title">Populares na Netflix</h2>
-        <div class="carousel-wrapper">
+    <div class="carrossel-container">
+        <h2 class="carrossel-title">Populares na Netflix</h2>
+        <div class="carrossel-wrapper">
             <button class="nav-btn prev" onclick="scroll(-300)">‹</button>
-            <div class="carousel" id="carousel1">
+            <div class="carrossel" id="carrossel1">
                 <div class="movie-card">
                     <div class="movie-info">
                         <h3>Filme 1</h3>
@@ -90,11 +90,11 @@
         </div>
     </div>
 
-    <div class="carousel-container">
-        <h2 class="carousel-title">Minha Lista</h2>
-        <div class="carousel-wrapper">
-            <button class="nav-btn prev" onclick="scrollCarousel('carousel2', -300)">‹</button>
-            <div class="carousel" id="carousel2">
+    <div class="carrossel-container">
+        <h2 class="carrossel-title">Minha Lista</h2>
+        <div class="carrossel-wrapper">
+            <button class="nav-btn prev" onclick="scrollcarrossel('carrossel2', -300)">‹</button>
+            <div class="carrossel" id="carrossel2">
                 <div class="movie-card">
                     <div class="movie-info">
                         <h3>Série 1</h3>
@@ -144,19 +144,19 @@
                     </div>
                 </div>
             </div>
-            <button class="nav-btn next" onclick="scrollCarousel('carousel2', 300)">›</button>
+            <button class="nav-btn next" onclick="scrollcarrossel('carrossel2', 300)">›</button>
         </div>
     </div>
 
     <script>
         function scroll(amount) {
-            document.getElementById('carousel1').scrollBy({
+            document.getElementById('carrossel1').scrollBy({
                 left: amount,
                 behavior: 'smooth'
             });
         }
 
-        function scrollCarousel(id, amount) {
+        function scrollcarrossel(id, amount) {
             document.getElementById(id).scrollBy({
                 left: amount,
                 behavior: 'smooth'

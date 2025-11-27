@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix-Logan-RVS</title>
     <link rel="stylesheet" href="css/catalogo.css">
 </head>
+
 <body>
     <header class="logo-header">
         <div class="logo">
             <!-- Imagem ou ícone da logo da Netflix -->
             <a href="#">
                 <img src="img/logo.jpg" alt="Logo Netflix">
-            </a>            
+            </a>
         </div>
         <nav>
             <a href="#">Início</a>
@@ -21,12 +23,12 @@
             <a href="#">Bombando</a>
             <a href="#">Minha Lista</a>
         </nav>
-    </header>    
+    </header>
     <section class="featured">
         <div class="featured-content">
             <h1 class="featured-title">IFRO: Uma Aventura Épica</h1>
             <p class="featured-description">
-                Uma jornada emocionante através do mundo acadêmico. 
+                Uma jornada emocionante através do mundo acadêmico.
                 Prepare-se para uma jornada de aprendizado e conhecimento que vai deixar você sem fôlego.
             </p>
             <div class="featured-buttons">
@@ -36,152 +38,153 @@
         </div>
     </section>
 
-    <div class="carousel-container">
-        <h2 class="carousel-title">Populares na Netflix</h2>
-        <div class="carousel-wrapper">
-            <button class="nav-btn prev" onclick="scrollCarousel('carousel1', -300)">‹</button>            
-            <div class="carousel" id="carousel1">
+    <div class="carrossel-container">
+        <h2 class="carrossel-title">Populares na Netflix</h2>
+        <div class="carrossel-wrapper">
+            <button class="nav-btn prev" onclick="scrollcarrossel('carrossel1', -300)">‹</button>
+            <div class="carrossel" id="carrossel1">
                 <div class="movie-card">
-                 <img src="img/img1.jpg" alt="Carrossel HTML CSS Imagem 1">
+                    <img src="img/img1.jpg" alt="Carrossel HTML CSS Imagem 1">
                     <div class="movie-info">
-                        <h3>    Filme 1</h3>
+                        <h3> Filme 1</h3>
                         <p>Ação • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
-                 <img src="img/img2.jpg" alt="Carrossel HTML CSS Imagem 2">
+                    <img src="img/img2.jpg" alt="Carrossel HTML CSS Imagem 2">
                     <div class="movie-info">
                         <h3>Filme 2</h3>
                         <p>Drama • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
-                 <img src="img/img3.jpg" alt="Carrossel HTML CSS Imagem 3">                    
+                    <img src="img/img3.jpg" alt="Carrossel HTML CSS Imagem 3">
                     <div class="movie-info">
                         <h3>Filme 3</h3>
                         <p>Comédia • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
-                 <img src="img/img4.jpg" alt="Carrossel HTML CSS Imagem 4">                                        
+                    <img src="img/img4.jpg" alt="Carrossel HTML CSS Imagem 4">
                     <div class="movie-info">
                         <h3>Filme 4</h3>
                         <p>Suspense • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
-                 <img src="img/img5.jpg" alt="Carrossel HTML CSS Imagem 5">                                                            
+                    <img src="img/img5.jpg" alt="Carrossel HTML CSS Imagem 5">
                     <div class="movie-info">
                         <h3>Filme 5</h3>
                         <p>Romance • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
-                 <img src="img/img6.jpg" alt="Carrossel HTML CSS Imagem 6">                                                            
+                    <img src="img/img6.jpg" alt="Carrossel HTML CSS Imagem 6">
                     <div class="movie-info">
                         <h3>Filme 6</h3>
                         <p>Ficção • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
-                 <img src="img/img7.jpg" alt="Carrossel HTML CSS Imagem 7">                               
+                    <img src="img/img7.jpg" alt="Carrossel HTML CSS Imagem 7">
                     <div class="movie-info">
                         <h3>Filme 7</h3>
                         <p>Terror • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
-                 <img src="img/img8.jpg" alt="Carrossel HTML CSS Imagem 8">                                                   
+                    <img src="img/img8.jpg" alt="Carrossel HTML CSS Imagem 8">
                     <div class="movie-info">
                         <h3>Filme 8</h3>
                         <p>Aventura • 2024</p>
-                    </div> 
+                    </div>
                 </div>
             </div>
             <!-- <button class="nav-btn next" onclick="scroll(300)">›</button> -->
-            <button class="nav-btn next" onclick="scrollCarousel('carousel1', 300)">›</button>            
+            <button class="nav-btn next" onclick="scrollcarrossel('carrossel1', 300)">›</button>
         </div>
     </div>
 
-    <div class="carousel-container">
-        <h2 class="carousel-title">Minha Lista</h2>
-        <div class="carousel-wrapper">
-            <button class="nav-btn prev" onclick="scrollCarousel('carousel2', -300)">‹</button>
-            <div class="carousel" id="carousel2">
+    <div class="carrossel-container">
+        <h2 class="carrossel-title">Minha Lista</h2>
+        <div class="carrossel-wrapper">
+            <button class="nav-btn prev" onclick="scrollcarrossel('carrossel2', -300)">‹</button>
+            <div class="carrossel" id="carrossel2">
                 <div class="movie-card">
-                 <img src="img/img16.jpg" alt="Carrossel HTML CSS Imagem 16">                           
+                    <img src="img/img16.jpg" alt="Carrossel HTML CSS Imagem 16">
                     <div class="movie-info">
                         <h3>Série 1</h3>
                         <p>Drama • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
-                 <img src="img/img9.jpg" alt="Carrossel HTML CSS Imagem 9">                      
+                    <img src="img/img9.jpg" alt="Carrossel HTML CSS Imagem 9">
                     <div class="movie-info">
                         <h3>Série 2</h3>
                         <p>Comédia • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
-                 <img src="img/img10.jpg" alt="Carrossel HTML CSS Imagem 10">                    
+                    <img src="img/img10.jpg" alt="Carrossel HTML CSS Imagem 10">
                     <div class="movie-info">
                         <h3>Série 3</h3>
                         <p>Ação • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
-                 <img src="img/img11.jpg" alt="Carrossel HTML CSS Imagem 11">                      
+                    <img src="img/img11.jpg" alt="Carrossel HTML CSS Imagem 11">
                     <div class="movie-info">
                         <h3>Série 4</h3>
                         <p>Suspense • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
-                 <img src="img/img12.jpg" alt="Carrossel HTML CSS Imagem 12">                       
+                    <img src="img/img12.jpg" alt="Carrossel HTML CSS Imagem 12">
                     <div class="movie-info">
                         <h3>Série 5</h3>
                         <p>Terror • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
-                 <img src="img/img13.jpg" alt="Carrossel HTML CSS Imagem 13">                    
+                    <img src="img/img13.jpg" alt="Carrossel HTML CSS Imagem 13">
                     <div class="movie-info">
                         <h3>Série 6</h3>
                         <p>Ficção • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
-                 <img src="img/img14.jpg" alt="Carrossel HTML CSS Imagem 14">                      
+                    <img src="img/img14.jpg" alt="Carrossel HTML CSS Imagem 14">
                     <div class="movie-info">
                         <h3>Série 7</h3>
                         <p>Romance • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
-                 <img src="img/img15.jpg" alt="Carrossel HTML CSS Imagem 15">                                          
+                    <img src="img/img15.jpg" alt="Carrossel HTML CSS Imagem 15">
                     <div class="movie-info">
                         <h3>Série 8</h3>
                         <p>Aventura • 2024</p>
                     </div>
                 </div>
             </div>
-            <button class="nav-btn next" onclick="scrollCarousel('carousel2', 300)">›</button>
+            <button class="nav-btn next" onclick="scrollcarrossel('carrossel2', 300)">›</button>
         </div>
-    </div> 
-   <script>
+    </div>
+    <script>
         function scroll(amount) {
-            document.getElementById('carousel1').scrollBy({
+            document.getElementById('carrossel1').scrollBy({
                 left: amount,
                 behavior: 'smooth'
             });
         }
 
-        function scrollCarousel(id, amount) {
+        function scrollcarrossel(id, amount) {
             document.getElementById(id).scrollBy({
                 left: amount,
                 behavior: 'smooth'
             });
         }
-    </script>    
+    </script>
 </body>
+
 </html>

@@ -127,7 +127,7 @@
             margin-bottom: 20px;
         }
 
-        .carousel {
+        .carrossel {
             display: flex;
             gap: 10px;
             overflow-x: auto;
@@ -135,20 +135,20 @@
             padding-bottom: 10px;
         }
 
-        .carousel::-webkit-scrollbar {
+        .carrossel::-webkit-scrollbar {
             height: 8px;
         }
 
-        .carousel::-webkit-scrollbar-track {
+        .carrossel::-webkit-scrollbar-track {
             background: #141414;
         }
 
-        .carousel::-webkit-scrollbar-thumb {
+        .carrossel::-webkit-scrollbar-thumb {
             background: #555;
             border-radius: 4px;
         }
 
-        .carousel::-webkit-scrollbar-thumb:hover {
+        .carrossel::-webkit-scrollbar-thumb:hover {
             background: #888;
         }
 

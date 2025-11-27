@@ -22,7 +22,7 @@
             justify-content: space-between;
             align-items: center;
         }
-        /*Estilização da barra de navegação superior, incluindo o logotipo e links.*/
+        /*Estilização da imagem principal, que ocupa grande parte do topo da página.*/
         .featured {
             position: relative;   
             height: 80vh;
@@ -32,28 +32,30 @@
             align-items: flex-end;
             padding: 0 50px 100px;
         }
-                .featured-content {
+        /*Estilização do título e descrição da imagem principal, que ocupa grande parte do topo da página.*/
+        .featured-content {
             max-width: 500px;
         }
-
+        /*Estilização do título da imagem principal, que ocupa grande parte do topo da página.*/
         .featured-title {
             font-size: 56px;
             font-weight: bold;
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.8);     
         }
-
+        /*Estilização da descrição da imagem principal, que ocupa grande parte do topo da página.*/
         .featured-description {
             font-size: 18px;
             line-height: 1.6;
             margin-bottom: 30px;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
         }
-
+        /*Estilização dos botões(Assistir/Mais Informações) da imagem principal, que ocupa grande parte do topo da página.*/
         .featured-buttons {
             display: flex;
             gap: 15px;
         }
+
         .btn {
             padding: 12px 30px;
             font-size: 16px;
@@ -92,23 +94,23 @@
             z-index: 10;
         }
 
-        .carousel-container {
+        .carrossel-container {
             margin: 40px 0;
         }
 
-        .carousel-title {
+        .carrossel-title {
             font-size: 1.4rem;
             font-weight: bold;
             margin-bottom: 15px;
             padding-left: 50px;
         }
 
-        .carousel-wrapper {
+        .carrossel-wrapper {
             position: relative;
             padding: 0 50px;
         }
 
-        .carousel {
+        .carrossel {
             display: flex;
             gap: 5px;
             overflow-x: auto;
@@ -117,7 +119,7 @@
             -ms-overflow-style: none;
         }
 
-        .carousel::-webkit-scrollbar {
+        .carrossel::-webkit-scrollbar {
             display: none;
         }
 
