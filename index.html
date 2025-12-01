@@ -95,6 +95,16 @@
                     <div class="movie-info">
                     </div>
                 </div>
+                <div class="movie-card">
+                    <img src="img/img17.jpg" alt="Carrossel HTML CSS Imagem 17">
+                    <div class="movie-info">
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="img/img18.jpg" alt="Carrossel HTML CSS Imagem 18">
+                    <div class="movie-info">
+                    </div>
+                </div>
             </div>
             <!-- Botão para rolar o carrossel para a direita -->
             <button class="nav-btn next" onclick="scrollcarrossel('carrossel1', 300)">›</button>
@@ -151,6 +161,16 @@
                     <div class="movie-info">
                     </div>
                 </div>
+                <div class="movie-card">
+                    <img src="img/img19.jpg" alt="Carrossel HTML CSS Imagem 19">
+                    <div class="movie-info">
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="img/img20.jpg" alt="Carrossel HTML CSS Imagem 20">
+                    <div class="movie-info">
+                    </div>
+                </div>
             </div>
             <!-- Botão direito -->
             <button class="nav-btn next" onclick="scrollcarrossel('carrossel2', 300)">›</button>
@@ -158,13 +178,6 @@
     </div>
     <!-- Script responsável pelo movimento dos carrosséis -->    
     <script>
-        /* Função antiga não utilizada (movimenta apenas carrossel1) */        
-        function scroll(amount) {
-            document.getElementById('carrossel1').scrollBy({
-                left: amount,
-                behavior: 'smooth'
-            });
-        }
         /* Função principal usada para mover qualquer carrossel da página */
         function scrollcarrossel(id, amount) {
             document.getElementById(id).scrollBy({
