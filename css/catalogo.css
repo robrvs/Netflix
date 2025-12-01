@@ -1,217 +1,226 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+                * {
+            margin: 0; /* Remove a margem padrão de todos os elementos. */
+            padding: 0; /* Remove o preenchimento (padding) padrão de todos os elementos. */
+            box-sizing: border-box; /* Define o modelo de caixa (box model) para 'border-box',
+       o que significa que padding e border estão incluídos na largura e altura total do elemento. */
         }
 
         body {
-            background: #141414; /*Estilização da cor do fundo na cor preta.*/
-            font-family: 'Arial', sans-serif; /*Estilização das possíveis fontes para o navegador interpretar.*/
-            color: #fff; 
-            padding: 4px;
+            background: #141414; /* Define a cor de fundo do corpo da página como um tom de cinza escuro/preto. */
+            font-family: 'Arial', sans-serif; /* Define a família de fontes principal como 'Arial', com 'sans-serif' como fallback. */
+            color: #fff; /* Define a cor padrão do texto como branco. */
+            padding: 4px; /* Adiciona um pequeno preenchimento (padding) de 4px ao redor do corpo da página. */
         }
-        /*Estilização da barra de navegação superior, incluindo o logotipo e links.*/
+        
         header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 20px 50px;
-            background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, transparent 100%);
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            position: fixed; /* Define a posição do cabeçalho como fixa na tela. */
+            top: 0; /* Ancorado no topo. */
+            width: 100%; /* Ocupa 100% da largura da viewport. */
+            padding: 20px 50px; /* Adiciona preenchimento interno (20px em cima/baixo, 50px nas laterais). */
+            background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, transparent 100%); /* Adiciona um gradiente linear para criar um efeito de desvanecimento na parte superior da tela. */
+            z-index: 1000; /* Define um alto valor de z-index para garantir que fique acima de outros elementos. */
+            display: flex; /* Habilita o Flexbox para o layout dos itens internos. */
+            justify-content: space-between; /* Distribui o espaço entre os elementos internos (logo e navegação). */
+            align-items: center; /* Alinha os itens verticalmente ao centro. */
         }
-        /*Estilização da imagem principal, que ocupa grande parte do topo da página.*/
+        /* Estilização da imagem principal, que ocupa grande parte do topo da página. */
         .featured {
-            position: relative;   
-            height: 80vh;
+            position: relative; /* Define a posição como relativa para posicionamento de elementos filhos (como o conteúdo). */
+            height: 80vh; /* Define a altura como 80% da altura da viewport. */
             background: linear-gradient(to bottom, transparent 0%, #141414 100%),
-                        url("../img/IFRO-Back-Red.jpg") center/cover;
-            display: flex;
-            align-items: flex-end;
-            padding: 0 50px 100px;
+                        url("../img/IFRO-Back-Red.jpg") center/cover; /* Adiciona um gradiente linear por cima de uma imagem de fundo.
+       O gradiente vai de transparente a preto na parte inferior. */
+            display: flex; /* Habilita o Flexbox. */
+            align-items: flex-end; /* Alinha o conteúdo interno na parte inferior. */
+            padding: 0 50px 100px; /* Adiciona preenchimento interno (0 em cima, 50px nas laterais, 100px embaixo). */
         }
-        /*Estilização do título e descrição da imagem principal, que ocupa grande parte do topo da página.*/
+        /* Estilização do container de conteúdo do destaque. */
         .featured-content {
-            max-width: 500px;
+            max-width: 500px; /* Limita a largura máxima do conteúdo. */
         }
-        /*Estilização do título da imagem principal, que ocupa grande parte do topo da página.*/
+        /* Estilização do título principal. */
         .featured-title {
-            font-size: 56px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);     
+            font-size: 56px; /* Tamanho da fonte grande. */
+            font-weight: bold; /* Fonte em negrito. */
+            margin-bottom: 20px; /* Margem inferior. */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* Adiciona uma sombra ao texto para maior legibilidade sobre a imagem de fundo. */      
         }
-        /*Estilização da descrição da imagem principal, que ocupa grande parte do topo da página.*/
+        /* Estilização da descrição principal (featured-description). */
         .featured-description {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+            font-size: 18px; /* Tamanho da fonte. */
+            line-height: 1.6; /* Espaçamento entre as linhas. */
+            margin-bottom: 30px; /* Margem inferior. */
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8); /* Adiciona uma sombra ao texto para maior legibilidade. */
         }
-        /*Estilização dos botões(Assistir/Mais Informações) da imagem principal, que ocupa grande parte do topo da página.*/
+        /* Estilização do container dos botões (Assistir/Mais Informações). */
         .featured-buttons {
             display: flex; /*Definimos que os elementos internos podem mudar de posição.*/
-            gap: 15px; /*Alinhamento vertical no centro.*/
+            gap: 15px; /* Cria um espaçamento (gap) de 15px entre os botões. */
         }
-
+        /* Estilos gerais para todos os botões (btn). */
         .btn {
-            padding: 12px 30px;
-            font-size: 16px;
-            font-weight: bold;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            padding: 12px 30px; /* Preenchimento interno. */
+            font-size: 16px; /* Tamanho da fonte. */
+            font-weight: bold; /* Fonte em negrito. */
+            border: none; /* Remove a borda padrão. */
+            border-radius: 4px; /* Arredonda os cantos. */
+            cursor: pointer; /* Define o cursor como ponteiro para indicar que é clicável. */
+            transition: all 0.3s; /* Habilita a transição suave para todas as propriedades em 0.3 segundos. */
+            display: flex; /* Habilita o Flexbox para alinhar ícones/texto dentro do botão. */
+            align-items: center; /* Alinha o conteúdo verticalmente ao centro. */
+            gap: 10px; /* Espaçamento entre o ícone e o texto. */
         }
-
+        /* Estilos específicos para o botão de 'Assistir' (btn-play). */
         .btn-play {
-            background: #fff;
-            color: #000;
+            background: #fff; /* Fundo branco. */
+            color: #000; /* Texto preto. */
         }
-        /*Estilização dos botões para mudar a cor do botão quando o mouse passar por cima deles.*/
+        /* Efeito hover para o botão de 'Assistir'. */
         .btn-play:hover {
-            background: rgba(255,255,255,0.75);
+            background: rgba(255,255,255,0.75); /*Estilização dos botões para mudar a cor do botão quando o mouse passar por cima deles. */
         }
-
+        /*Estilos específicos para o botão de 'Mais Informações' */
         .btn-info {
-            background: rgba(109,109,110,0.7);
-            color: #fff;
+            background: rgba(109,109,110,0.7); /* Fundo cinza semi-transparente. */
+            color: #fff; /* Texto branco. */
         }
-
+        /* Efeito hover para o botão de 'Mais Informações'.*/
         .btn-info:hover {
-            background: rgba(109,109,110,0.4);
+            background: rgba(109,109,110,0.4); /* Diminui ainda mais a opacidade do fundo cinza ao passar o mouse. */
         }
-
+        /* Estilização do container de conteúdo principal. */
         .content {
-            padding: 0 50px 50px;
-            margin-top: -150px;
-            position: relative;
-            z-index: 10;
+            padding: 0 50px 50px; /* Preenchimento interno (0 em cima, 50px nas laterais, 50px embaixo). */
+            margin-top: -150px; /* Move o conteúdo para cima, sobrepondo parte do banner principal. */
+            position: relative; /* Define a posição como relativa. */
+            z-index: 10; /* Define um z-index para garantir que fique sobre o banner. */
         }
-
+        /* Estilização do container do carrossel. */
         .carrossel-container {
-            margin: 40px 0;
+            margin: 40px 0;  /* Margem em cima e embaixo. */
         }
-
+        /* Estilização do título do carrossel. */
         .carrossel-title {
-            font-size: 1.4rem;
-            font-weight: bold;
-            margin-bottom: 15px;
-            padding-left: 50px;
+            font-size: 1.4rem; /* Tamanho da fonte. */
+            font-weight: bold; /* Fonte em negrito. */
+            margin-bottom: 15px; /* Margem inferior. */
+            padding-left: 50px; /* Adiciona preenchimento à esquerda (alinhando com o conteúdo). */
         }
-
+        /* Estilização do wrapper (invólucro) que contém o carrossel. */
         .carrossel-wrapper {
-            position: relative;
-            padding: 0 50px;
+            position: relative; /* Posição relativa para posicionamento dos botões de navegação. */
+            padding: 0 50px; /* Preenchimento nas laterais. */
         }
-
+        /* Estilização do carrossel (a lista horizontal de itens). */
         .carrossel {
-            display: flex;
-            gap: 5px;
-            overflow-x: auto;
-            scroll-behavior: smooth;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
+            display: flex; /* Habilita o Flexbox para dispor os cards lado a lado. */
+            gap: 5px; /* Espaçamento entre os cards. */
+            overflow-x: auto; /* Permite a rolagem horizontal quando o conteúdo exceder o container. */
+            scroll-behavior: smooth; /* Habilita a rolagem suave. */
+            scrollbar-width: none; /* Esconde a barra de rolagem (Firefox). */
+            -ms-overflow-style: none; /* Esconde a barra de rolagem (IE/Edge). */
         }
-
+        /* Remove a barra de rolagem (Webkit - Chrome, Safari). */
         .carrossel::-webkit-scrollbar {
-            display: none;
+            display: none; /* Oculta a barra de rolagem. */
         }
-
+        /* Estilização do card individual de filme/item. */
         .movie-card {
-            min-width: 250px;
-            height: 140px;
-            background: #2a2a2a;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: transform 0.3s ease, z-index 0s 0.3s;
-            position: relative;
-            overflow: hidden;
+            min-width: 250px; /* Largura mínima do card. */
+            height: 140px; /* Altura do card. */
+            background: #2a2a2a; /* Cor de fundo padrão (quando não há imagem). */
+            border-radius: 4px; /* Arredonda os cantos. */
+            cursor: pointer; /* Define o cursor como ponteiro. */
+            transition: transform 0.3s ease, z-index 0s 0.3s; /* Transição para os efeitos de hover (transform: imediato; z-index: após 0.3s). */
+            position: relative; /* Posição relativa para posicionamento de elementos filhos (info). */
+            overflow: hidden; /* Esconde o conteúdo que ultrapassa as bordas. */
         }
-
+        /* Estilização da imagem dentro do card. */
         .movie-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            width: 100%; /* Ocupa 100% da largura. */
+            height: 100%; /* Ocupa 100% da altura. */
+            object-fit: cover; /* Garante que a imagem cubra o card sem distorção. */
         }
-
+        /* Efeito hover para o card: Aumenta o tamanho e eleva o z-index. */
         .movie-card:hover {
-            transform: scale(1.5);
-            z-index: 10;
-            transition: transform 0.3s ease, z-index 0s;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+            transform: scale(1.5); /* Aumenta o tamanho do card em 50%. */
+            z-index: 10; /* Eleva o card para que fique sobre os vizinhos. */
+            transition: transform 0.3s ease, z-index 0s; /* Transição para os efeitos de hover (transform: suave; z-index: imediato). */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.6); /* Adiciona uma sombra para destaque. */
         }
-
+        /* Estilização do container de informações do filme que aparece no hover. */
         .movie-info {
-            position: absolute;
-            bottom: 0;
-            left: 0; 
-            right: 0;
-            background: linear-gradient(transparent, rgba(0,0,0,0.9));
-            padding: 30px 10px 10px;
-            opacity: 0;
-            transition: opacity 0.3s ease;
+            position: absolute; /* Posiciona o container absolutamente. */
+            bottom: 0; /* Ancorado na parte inferior. */
+            left: 0; /* Estende-se por toda a largura (left: 0, right: 0). */
+            right: 0; /* Estende-se por toda a largura (left: 0, right: 0). */
+            background: linear-gradient(transparent, rgba(0,0,0,0.9)); /* Fundo gradiente para escurecer a parte inferior e melhorar a leitura do texto. */
+            padding: 30px 10px 10px; /* Preenchimento interno. */
+            opacity: 0; /* Inicialmente invisível. */
+            transition: opacity 0.3s ease; /* Habilita a transição para a opacidade. */
         }
-
+        /* Torna as informações visíveis quando o card é 'hoverado'. */
         .movie-card:hover .movie-info {
-            opacity: 1;
+            opacity: 1; /* Torna o container de informações completamente visível. */
         }
-
+        /* Estilização do título do filme dentro do container de informações. */
         .movie-info h3 {
-            font-size: 0.9rem;
-            margin-bottom: 5px;
+            font-size: 0.9rem; /* Tamanho da fonte. */
+            margin-bottom: 5px; /* Margem inferior. */
         }
-
+        /* Estilização da descrição/detalhes do filme dentro do container de informações. */
         .movie-info p {
-            font-size: 0.75rem;
-            color: #ccc;
+            font-size: 0.75rem; /* Tamanho da fonte menor. */
+            color: #ccc; /* Cor do texto cinza claro. */
         }
+        /* Estilização da navegação (links no cabeçalho). */
         nav {
-            display: flex;
-            gap: 20px;
-        }        
+            display: flex; /* Habilita o Flexbox para dispor os links. */
+            gap: 20px; /* Espaçamento entre os links. */
+        }      
+        /* Estilização dos links dentro da navegação. */  
         nav a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 14px;
-            transition: color 0.3s;         
+            color: #fff; /* Cor do texto branca. */
+            text-decoration: none; /* Remove a sublinhado padrão. */
+            font-size: 14px; /* Tamanho da fonte. */
+            transition: color 0.3s; /* Habilita a transição suave para a mudança de cor. */        
         }
+        /* Efeito hover para os links de navegação. */
                 nav a:hover {
-            color: #b3b3b3;
+            color: #b3b3b3; /* Muda a cor do link para um cinza mais claro ao passar o mouse. */
         }
+        /* Estilização dos botões de navegação do carrossel (esquerda/direita). */
         .nav-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0,0,0,0.7);
-            color: #fff;
-            border: none;
-            width: 40px;
-            height: 140px;
-            cursor: pointer;
-            z-index: 5;
-            font-size: 2rem;
-            transition: background 0.3s ease;
+            position: absolute; /* Posição absoluta dentro do carrossel-wrapper. */
+            top: 50%; /* Posiciona verticalmente no centro (50% do topo). */
+            transform: translateY(-50%); /* Compensa 50% da altura do botão para um alinhamento perfeito. */
+            background: rgba(0,0,0,0.7); /* Fundo preto semi-transparente. */
+            color: #fff; /* Cor do texto branca. */
+            border: none; /* Remove a borda. */
+            width: 40px; /* Largura fixa. */
+            height: 140px; /* Altura fixa. */
+            cursor: pointer; /* Cursor ponteiro. */
+            z-index: 5; /* Garante que fique acima dos cards. */
+            font-size: 2rem; /* Tamanho da fonte grande (para os ícones/setas). */
+            transition: background 0.3s ease; /* Habilita a transição suave para a mudança de fundo. */
         }
-
+        /* Efeito hover para os botões de navegação. */
         .nav-btn:hover {
-            background: rgba(0,0,0,0.9);
+            background: rgba(0,0,0,0.9); /* Torna o fundo mais opaco ao passar o mouse. */
         }
-
+        /* Posiciona o botão 'Anterior' (prev) na extremidade esquerda. */
         .nav-btn.prev {
             left: 0;
         }
-
+        /* Posiciona o botão 'Próximo' (next) na extremidade direita. */
         .nav-btn.next {
             right: 0;
         }
-
-        /* Espaço reservado para as imagens com cores gradientes */
+        /*
+        * Estilos específicos para os cards, adicionando um gradiente de cor como fundo
+        * caso a imagem não seja carregada ou para efeitos visuais.
+        * O seletor ':nth-child(n)' aplica o estilo ao n-ésimo elemento filho.
+        */
         .movie-card:nth-child(1) { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
         .movie-card:nth-child(2) { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
         .movie-card:nth-child(3) { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
@@ -220,16 +229,24 @@
         .movie-card:nth-child(6) { background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); }
         .movie-card:nth-child(7) { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
         .movie-card:nth-child(8) { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); }
-
-.logo-header {
-    display: flex; /* Usa flexbox para alinhar itens */
-    justify-content: space-between; /* Espaça a logo e o menu */
-    align-items: center; /* Alinha verticalmente ao centro */
-    background-color: #000; /* Fundo preto */
-    padding: 10px 20px; /* Espaçamento interno */
-    color: #fff; /* Cor do texto */
-}
-
-.logo img {
-    height: 40px; /* Ajuste a altura conforme necessário */
-}
+        .movie-card:nth-child(9) { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .movie-card:nth-child(10) { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .movie-card:nth-child(11) { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }    
+        .movie-card:nth-child(12) { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .movie-card:nth-child(13) { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+        .movie-card:nth-child(14) { background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); }
+        .movie-card:nth-child(15) { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
+        .movie-card:nth-child(16) { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); }
+        /* Estilização do container da logo no cabeçalho. */        
+        .logo-header {
+            display: flex; /* Habilita o Flexbox para alinhar itens. */
+            justify-content: space-between; /* Espaça a logo e o menu (embora no seu HTML isso possa ser redefinido pelo 'header' principal). */
+            align-items: center; /* Alinha verticalmente ao centro. */
+            background-color: #000; /* Define o fundo preto. */
+            padding: 10px 20px; /* Espaçamento interno. */
+            color: #fff; /* Cor do texto. */
+        }
+        /* Estilização da imagem da logo dentro do container. */
+        .logo img {
+            height: 40px; /* Define a altura da imagem da logo. */
+        }

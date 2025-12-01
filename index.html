@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix-Logan-RVS</title>
+    <title>Netflix</title>
+    <link rel="icon" type="image/png" href="img/icone.png">
     <link rel="stylesheet" href="css/catalogo.css">
 </head>
 
@@ -14,6 +15,7 @@
             <!-- Imagem da logo da Netflix, na parte superior esquerda da página. -->
             <a href="#"><img src="img/logo.jpg" alt="Logo Netflix"></a>
         </div>
+        <!-- Menu de navegação principal -->        
         <nav>
             <a href="#">Início</a>
             <a href="#">Séries</a>
@@ -22,164 +24,152 @@
             <a href="#">Minha Lista</a>
         </nav>
     </header>
+    <!-- Seção de destaque, semelhante ao banner principal da Netflix -->    
     <section class="featured">
+        <!-- Conteúdo central do banner -->        
         <div class="featured-content">
+        <!-- Título em destaque do banner -->            
             <h1 class="featured-title">IFRO: Uma Aventura Épica</h1>
+            <!-- Descrição ou sinopse do conteúdo destacado -->
             <p class="featured-description">
                 Uma jornada emocionante através do mundo acadêmico.
                 Prepare-se para uma jornada de aprendizado e conhecimento que vai deixar você sem fôlego.
             </p>
+            <!-- Botões principais do banner -->
             <div class="featured-buttons">
+                <!-- Botão para iniciar o conteúdo -->
                 <button class="btn btn-play">▶ Assistir</button>
+                <!-- Botão para abrir detalhes ou sinopse -->
                 <button class="btn btn-info">Mais Informações</button>
             </div>
         </div>
     </section>
-
+    <!-- Container do carrossel de filmes/séries -->
     <div class="carrossel-container">
+        <!-- Título acima do carrossel -->
         <h2 class="carrossel-title">Populares na Netflix</h2>
+        <!-- Área que envolve o carrossel e os botões de navegação -->
         <div class="carrossel-wrapper">
+            <!-- Botão para rolar o carrossel para a esquerda -->
             <button class="nav-btn prev" onclick="scrollcarrossel('carrossel1', -300)">‹</button>
+            <!-- Carrossel 1 horizontal contendo vários cards de filmes -->
             <div class="carrossel" id="carrossel1">
+                <!-- Cada bloco abaixo representa um card de filme -->
                 <div class="movie-card">
                     <img src="img/img1.jpg" alt="Carrossel HTML CSS Imagem 1">
                     <div class="movie-info">
-                        <h3> Filme 1</h3>
-                        <p>Ação • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
                     <img src="img/img2.jpg" alt="Carrossel HTML CSS Imagem 2">
                     <div class="movie-info">
-                        <h3>Filme 2</h3>
-                        <p>Drama • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
                     <img src="img/img3.jpg" alt="Carrossel HTML CSS Imagem 3">
                     <div class="movie-info">
-                        <h3>Filme 3</h3>
-                        <p>Comédia • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
                     <img src="img/img4.jpg" alt="Carrossel HTML CSS Imagem 4">
                     <div class="movie-info">
-                        <h3>Filme 4</h3>
-                        <p>Suspense • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
                     <img src="img/img5.jpg" alt="Carrossel HTML CSS Imagem 5">
                     <div class="movie-info">
-                        <h3>Filme 5</h3>
-                        <p>Romance • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
                     <img src="img/img6.jpg" alt="Carrossel HTML CSS Imagem 6">
                     <div class="movie-info">
-                        <h3>Filme 6</h3>
-                        <p>Ficção • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
                     <img src="img/img7.jpg" alt="Carrossel HTML CSS Imagem 7">
                     <div class="movie-info">
-                        <h3>Filme 7</h3>
-                        <p>Terror • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
                     <img src="img/img8.jpg" alt="Carrossel HTML CSS Imagem 8">
                     <div class="movie-info">
-                        <h3>Filme 8</h3>
-                        <p>Aventura • 2024</p>
                     </div>
                 </div>
             </div>
-            <!-- <button class="nav-btn next" onclick="scroll(300)">›</button> -->
+            <!-- Botão para rolar o carrossel para a direita -->
             <button class="nav-btn next" onclick="scrollcarrossel('carrossel1', 300)">›</button>
         </div>
     </div>
-
+    <!-- Segundo carrossel da página -->
     <div class="carrossel-container">
+        <!-- Título do carrossel -->
         <h2 class="carrossel-title">Minha Lista</h2>
+        <!-- Wrapper contendo carrossel + botões -->
         <div class="carrossel-wrapper">
+            <!-- Botão esquerdo -->
             <button class="nav-btn prev" onclick="scrollcarrossel('carrossel2', -300)">‹</button>
+            <!-- Carrossel 2 horizontal contendo vários cards de filmes -->
             <div class="carrossel" id="carrossel2">
+                <!-- Cada bloco abaixo representa um card de filme -->
                 <div class="movie-card">
                     <img src="img/img16.jpg" alt="Carrossel HTML CSS Imagem 16">
-                    <div class="movie-info">
-                        <h3>Série 1</h3>
-                        <p>Drama • 2024</p>
+                    <div class="movie-info">                        
                     </div>
                 </div>
                 <div class="movie-card">
                     <img src="img/img9.jpg" alt="Carrossel HTML CSS Imagem 9">
                     <div class="movie-info">
-                        <h3>Série 2</h3>
-                        <p>Comédia • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
                     <img src="img/img10.jpg" alt="Carrossel HTML CSS Imagem 10">
                     <div class="movie-info">
-                        <h3>Série 3</h3>
-                        <p>Ação • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
                     <img src="img/img11.jpg" alt="Carrossel HTML CSS Imagem 11">
                     <div class="movie-info">
-                        <h3>Série 4</h3>
-                        <p>Suspense • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
                     <img src="img/img12.jpg" alt="Carrossel HTML CSS Imagem 12">
                     <div class="movie-info">
-                        <h3>Série 5</h3>
-                        <p>Terror • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
                     <img src="img/img13.jpg" alt="Carrossel HTML CSS Imagem 13">
                     <div class="movie-info">
-                        <h3>Série 6</h3>
-                        <p>Ficção • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
                     <img src="img/img14.jpg" alt="Carrossel HTML CSS Imagem 14">
                     <div class="movie-info">
-                        <h3>Série 7</h3>
-                        <p>Romance • 2024</p>
                     </div>
                 </div>
                 <div class="movie-card">
                     <img src="img/img15.jpg" alt="Carrossel HTML CSS Imagem 15">
                     <div class="movie-info">
-                        <h3>Série 8</h3>
-                        <p>Aventura • 2024</p>
                     </div>
                 </div>
             </div>
+            <!-- Botão direito -->
             <button class="nav-btn next" onclick="scrollcarrossel('carrossel2', 300)">›</button>
         </div>
     </div>
+    <!-- Script responsável pelo movimento dos carrosséis -->    
     <script>
+        /* Função antiga não utilizada (movimenta apenas carrossel1) */        
         function scroll(amount) {
             document.getElementById('carrossel1').scrollBy({
                 left: amount,
                 behavior: 'smooth'
             });
         }
-
+        /* Função principal usada para mover qualquer carrossel da página */
         function scrollcarrossel(id, amount) {
             document.getElementById(id).scrollBy({
-                left: amount,
-                behavior: 'smooth'
+                left: amount, // valor de deslocamento
+                behavior: 'smooth' // animação suave
             });
         }
     </script>
